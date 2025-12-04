@@ -8,7 +8,23 @@ import yfinance as yf
 np.random.seed(42)
 
 # Define assets
-assets = ['Stock A', 'Stock B', 'Stock C', 'Bond A', 'Crypto X']
+assets = [
+    "AAPL",  # Apple
+    "MSFT",  # Microsoft
+    "NVDA",  # Nvidia
+    "JPM",   # JPMorgan Chase
+    "V",     # Visa
+    "AMZN",  # Amazon
+    "META",  # Meta Platforms
+    "JNJ",   # Johnson & Johnson
+    "PFE",   # Pfizer
+    "XOM",   # ExxonMobil
+    "CVX",   # Chevron
+    "CAT",   # Caterpillar
+    "KO",    # Coca-Cola
+    "PG",    # Procter & Gamble
+    "GOOGL"  # Alphabet (Google)
+]
 
 # Expected annual returns (in %)
 mean_returns = np.array([0.10, 0.08, 0.12, 0.05, 0.18])
