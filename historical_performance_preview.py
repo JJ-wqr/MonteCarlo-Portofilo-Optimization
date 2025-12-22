@@ -34,7 +34,11 @@ colors = {
 
 # Figure 1: All stocks including NVDA
 plt.figure(1, figsize=(14, 8))
-for column in df_pct.columns:
+
+# Sort columns by final return value (highest to lowest)
+sorted_columns = df_pct.iloc[-1].sort_values(ascending=False).index
+
+for column in sorted_columns:
     plt.plot(df_pct.index, df_pct[column], label=column, 
              color=colors[column], linewidth=1.5)
 
@@ -49,7 +53,11 @@ plt.tight_layout()
 # Figure 2: All stocks excluding NVDA
 plt.figure(2, figsize=(14, 8))
 df_pct_no_nvda = df_pct.drop('NVDA', axis=1)
-for column in df_pct_no_nvda.columns:
+
+# Sort columns by final return value (highest to lowest)
+sorted_columns_no_nvda = df_pct_no_nvda.iloc[-1].sort_values(ascending=False).index
+
+for column in sorted_columns_no_nvda:
     plt.plot(df_pct_no_nvda.index, df_pct_no_nvda[column], label=column,
              color=colors[column], linewidth=1.5)
 

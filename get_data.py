@@ -1,5 +1,6 @@
 import yfinance as yf
 
+
 tickers = [
     "AAPL",  # Apple
     "MSFT",  # Microsoft
@@ -15,8 +16,44 @@ tickers = [
     "CAT",   # Caterpillar
     "KO",    # Coca-Cola
     "PG",    # Procter & Gamble
-    "GOOGL"  # Alphabet (Google)
-]
+    "GOOGL", # Alphabet (Google)
+    "AVGO",  # Broadcom
+    "BRK-B", # Berkshire Hathaway Class B
+    "WMT",   # Walmart
+    "LLY",   # Eli Lilly
+    "ORCL",  # Oracle
+    "MA",    # Mastercard
+    "HD",    # Home Depot
+    "COST",  # Costco
+    "MRK",   # Merck & Co.
+    "PEP",   # PepsiCo
+    "BAC",   # Bank of America
+    "CSCO",  # Cisco Systems
+    "CRM",   # Salesforce
+    "ADBE",  # Adobe
+    "DIS",   # Walt Disney
+    "TMO",   # Thermo Fisher Scientific
+    "MCD",   # McDonald's
+    "ABT",   # Abbott Laboratories
+    "WFC",   # Wells Fargo
+    "CMCSA", # Comcast
+    "INTC",  # Intel
+    "VZ",    # Verizon
+    "QCOM",  # Qualcomm
+    "TXN",   # Texas Instruments
+    "NKE",   # Nike
+    "UPS",   # United Parcel Service
+    "PM",    # Philip Morris International
+    "UNH",   # UnitedHealth Group
+    "MS",    # Morgan Stanley
+    "BA",    # Boeing
+    "HON",   # Honeywell
+    "IBM",   # IBM
+    "GE",    # General Electric
+    "GS",    # Goldman Sachs
+    "SBUX"   # Starbucks
+]``
+
 
 start = '2014-01-01'
 end = '2025-01-01'

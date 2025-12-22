@@ -23,7 +23,8 @@ assets = [
     "CAT",   # Caterpillar
     "KO",    # Coca-Cola
     "PG",    # Procter & Gamble
-    "GOOGL"  # Alphabet (Google)
+    "GOOGL",  # Alphabet (Google)
+    ""
 ]
 
 # Expected annual returns (in %)
